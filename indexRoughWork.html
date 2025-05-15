@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Your Name</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Your Full Name. Keywords: dynamic web, fundamentals, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Full Name">
+</head>
+<body>
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> |
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a> |
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Favorite Scripture</a> |
+            <a href="#" title="Final Project Folder Placeholder">Final Project Folder</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Section One Heading</h2>
+            <img src="images/image1.jpg" alt="Description of image one" width="300" height="200">
+            <p>This is the content for the first section card. It includes optimized, local images and relevant text describing the content.</p>
+        </section>
+
+        <section class="card">
+            <h2>Section Two Heading</h2>
+            <img src="images/image2.jpg" alt="Description of image two" width="300" height="200">
+            <p>This is the content for the second section card. It also uses local images and provides additional information relevant to the page.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Full Name. Your State or Country.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        const lastMod = new Date(document.lastModified);
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + lastMod.toLocaleString('en-US', options);
+    </script>
+</body>
+</html>
