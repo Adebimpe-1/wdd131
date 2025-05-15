@@ -25,6 +25,34 @@ body {
 }
 
 header {
+    display: grid;    
+    background-color: var(--text-color);  
+    padding: 20px;
+    grid-template-columns: auto 1fr;
+    align-items: center;  
+    justify-content: space-between;  
+}  
+
+.logo img {  
+    width: 100px; 
+}  
+
+nav ul {  
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;   
+}  
+
+nav ul li {  
+    margin: 0 10px;  
+}  
+
+nav ul li a {  
+    color: #a1c0ce;  
+    text-decoration: none;  
+}  
+/*  */
+header {
   background-color: var(--color-primary);
   color: white;
   padding: 20px;
@@ -33,17 +61,17 @@ header {
   max-height: 200px;
 }
 
-.nav-menu {
+.nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 0;
   margin: 10px 0 0 0;
 }
-
-.nav-menu li {
+/*  */
+.nav li {
   margin: 0 15px;
 }
-
+/*  */
 .nav-menu a {
     color: white;
   font-weight: 600;
@@ -51,10 +79,10 @@ header {
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
   text-decoration: none;
-  /* padding: 8px 12px; */
-  /* border-radius: 4px; */
-}
-
+  padding: 8px 12px;
+  border-radius: 4px;
+} 
+/*  */
 .nav-menu a:hover
 header nav a:focus {
   background-color:var(--color-accent);
@@ -63,7 +91,7 @@ header nav a:focus {
   outline: none;
 }
 
-/* Main styling */
+/*  */
 main {
   max-width: 1000px;
   margin: 20px auto;
