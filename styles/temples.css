@@ -1,0 +1,88 @@
+/* Basic reset and font setup */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc; /* Example color */
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #a0522d; /* Example color */
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Hamburger button styles for mobile */
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}  
+
+/* Hide menu in mobile initially */
+#nav-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #a0522d;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  padding: 0.5rem;
+}
+
+#nav-menu a {
+  display: flex;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+#nav-menu a:hover {
+  background-color: #8b4513;
+}
+
+/* Show menu when toggled */
+#nav-menu.visible {
+  display: flex;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Grid layout for figures - single column by default */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Responsive adjustments in large stylesheet (temples-large.css) */
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #a0522d;
+  color: white;
+}

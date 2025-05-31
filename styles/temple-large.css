@@ -1,0 +1,22 @@
+/* Slightly larger font or different layout for larger screens */
+main {
+  max-width: 1000px;
+}
+
+/* Make the grid have two or more columns */
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Navigation menu in larger view */
+#nav-menu {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0;
+}
+
+#menu-toggle {
+  display: none; /* hide hamburger in larger screens */
+}

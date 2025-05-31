@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temple-large.css" media="screen and (min-width: 768px)" />
+  
+  <!-- External JS -->
+  <script src="scripts/temple.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+     <button id="menu-toggle" aria-label="Toggle menu" 
+     aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <nav id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Beautiful Temples</h1>
+    <section class="grid-container">
+      <!-- 9 placeholder images -->
+      <figure>
+        <img src="images/pic1.jpeg" alt="Temple 1" />
+        <figcaption>Temple of the Sun</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic2.jpeg" alt="Temple 2" />
+        <figcaption>Temple of the Moon</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic3.jpeg" alt="Temple 3" />
+        <figcaption>Temple of the Stars</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic4.jpeg" alt="Temple 4" />
+        <figcaption>Temple of the Forest</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic5.jpeg" alt="Temple 5" />
+        <figcaption>Temple of the Mountain</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic6.jpeg" alt="Temple 6" />
+        <figcaption>Temple of the River</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic7.jpeg" alt="Temple 7" />
+        <figcaption>Temple of the Desert</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic8.jpeg" alt="Temple 8" />
+        <figcaption>Temple of the Valley</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic9.jpeg" alt="Temple 9" />
+        <figcaption>Temple of the Light</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Adebimpe Aderoju. Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- Inline script for menu toggle and dynamic info  -->
+   <script src="scripts.js" defer></script>
+</body>
+</html>
