@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Nigeria</title>
+<link rel="stylesheet" href="styles/place.css">
+<script defer src="scripts/place.js"></script>
+</head>
+<body>
+<header>
+  <h1>Nigeria</h1>
+</header>
+
+<section class="hero">
+  <h2> Scenic view of Nigeria's farmlands</h2>
+  <img 
+    src="images/nigeria-scenic-view.webp" 
+    srcset="
+      images/nigeria-scenic-view.webp 600w,
+      images/nigeria-scenic-view.webp 900w,
+      images/nigeria-scenic-view.webp 1200w" 
+    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+    alt="Scenic view of Nigeria">
+</section>
+
+<section class="about">
+  <h2>About Nigeria</h2>
+  <p>Nigeria, located in West Africa, is a country known for its diverse cultures, languages, and landscapes. 
+  From the bustling cities of Lagos and Abuja to the serene beaches and lush rainforests, Nigeria offers a vibrant mix of tradition and modernity. 
+  Its rich history, colorful festivals, and warm hospitality make it a fascinating destination for travelers and history enthusiasts alike</p>
+</section>
+
+<div class="container">
+  <section class="data-box">
+    <h2>Data</h2>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+    <div class="data-item"><span class="label">Label:</span> <span class="value">Value</span></div>
+  </section>
+  </div>
+
+<section class="weather">
+  <h2>Nigeria's Weather ⛅</h2>
+  <div class="weather-details">
+    <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+    <p>Temperature: <span id="temp">45</span> °F</p>
+    <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
+    <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Last Updated: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
