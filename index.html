@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Your Name. Course landing page showcasing web fundamentals." />
+    <meta name="author" content="Your Name" />
+    <title>WDD 131 - Dynamic Web Fundamentals – Adebimpe Aderoju</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, sequi provident ea excepturi ut maiores, fugiat possimus sint accusamus eum molestias fuga eaque voluptas nostrum, laborum consequatur commodi perferendis. Facilis!
+    <header>
+        <h1 id="course-title">
+            WDD 131 - Dynamic Web Fundamentals
+            <span>Logo</span>
+        </h1>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scriptures</a>
+            <a href="#" target="_blank" rel="noopener">Final Project Folder</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>ADEROJU ADEBIMPE M.</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/my_photo.jpg" alt="Photo or Graphic About Me" />
+            <p>I am a recent Chemical Engineering graduate from Obafemi Awolowo University, now pursuing software engineering at BYU
+            Idaho. I focus on Python and web development, blending analytical and problem-solving skills. I'm eager to explore the
+            intersection of engineering, data analysis, and AI.</p>
+        </section>
+
+        <section class="card">
+            <h2>Course Projects</h2>
+            <img src="images/project.jpg" alt="Example course projects" />
+            <p>A front-end prototype of an e-commerce site, focusing on responsive design and user experience across various devices, 
+                while implementing intricate CSS animations and transitions and including 
+                technologies like HTML, CSS (Flexbox, Grid), JavaScript (Vanilla).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 <span id="year"></span> Adebimpe Mary A, from Lagos Nigeria to the world.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
