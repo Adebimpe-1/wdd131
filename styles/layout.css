@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 234, 222);
+}
+
+:root {
+    /* You can customize the color scheme here */
+    --bg: #f6f8fc;
+    --surface: rgb(32, 32, 82);
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #4f46e5;
+    --accent: #10b981;
+    --card: #ffffff;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: var(--text);
+    background: var(--bg);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header area inside the body grid */
+header {
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.site-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* Navigation as a flex container */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-items: right;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--surface);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    background: #eef2ff;
+    outline: none;
+}
+
+/* Main content area uses CSS Grid for layout
+   We create a single container that houses all content as the grid area. */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two-column layout for illustration; adjust as needed */
+    gap: 1rem;
+    max-width: 1100px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Cards / sections styling */
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
+}
+
+.hero {
+    grid-column: span 2;
+    /* Make hero span both columns if you want a prominent top area */
+}
+
+/* Adjust the grid on smaller screens for responsiveness */
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Footer styling */
+.site-footer {
+    background: #111827;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 1rem;
+}
