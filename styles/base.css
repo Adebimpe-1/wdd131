@@ -62,7 +62,7 @@ main {
 h1,
 h2 {
     font-weight: 700;
-    color: #004a99;
+    color: #222;
 }
 div {
     display: grid;
