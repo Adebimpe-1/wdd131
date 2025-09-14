@@ -1,0 +1,101 @@
+/* Base typography and reset */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    background: #f5f5f5;
+}
+
+/* Header with responsive navigation (Flex) */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #e6f0ff;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.site-nav {
+    display: none;
+    /* hidden on mobile; toggled via JS */
+    gap: 1rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #0f2d57;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+.site-nav a:hover {
+    background: rgba(15, 45, 87, 0.1);
+}
+
+/* Main layout: centered column with max width and grid for content */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.content h1 {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+/* Gallery grid: mobile shows 1 column by default */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* Each figure styling */
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #333;
+}
+.gallery figure:hover {
+    background: rgba(15, 45, 87, 0.1);
+}

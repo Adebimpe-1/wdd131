@@ -1,0 +1,35 @@
+/* Global font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared layout styling for header, main, and footer (max-width and centering) */
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #e6f2ff;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* Main as a single-column grid with 1rem gap */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    /* Ensure the grid items stretch nicely inside the container */
+    align-items: stretch;
+}
+
+/* Section styling: padding and lighter/white background as specified */
+section {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 4px;
+}
