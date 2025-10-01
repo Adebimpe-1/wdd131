@@ -51,7 +51,7 @@ body {
 }
 
 body {
-    margin: 0;
+    margin: 2rem;
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--primary-color);
@@ -103,11 +103,23 @@ nav a:hover {
     box-shadow: var(--shadow);
     margin: 1rem 0 2rem;
 }
+h2.weather-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
 
-.weather-icon {
-    width: 48px;
-    height: 48px;
-    display: inline-block;
+h2.weather-heading svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .weather-table-wrap {
@@ -184,7 +196,7 @@ nav a:hover {
     transform: translateY(-50%);
     width: 28px;
     height: 28px;
-    background: url('img/weather-icon.svg') center/contain no-repeat;
+    background: url('images/.weather-icon.svg') center/contain no-repeat;
    display: none;
 }
 
