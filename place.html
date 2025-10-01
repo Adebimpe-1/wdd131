@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place Spotlight: Lagos, Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Explore Lagos, Nigeria</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#weather">Weather</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px by 250px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px by 500px)">
+                <img src="images/1.webp" alt="Scenic view of Lagos, Nigeria" width="1200" height="600" />
+            </picture>
+        </section>
+
+        <section class="intro">
+            <h2>About Lagos, Nigeria</h2>
+            <p>Lagos, Nigeria is a major metropolitan city located in the southwestern part of Nigeria along the coast of the Gulf of
+            Guinea, near the border with Benin. It is the largest city in Nigeria and the most populous urban area in Africa, with
+            over 21 million inhabitants as of recent estimates. Lagos stands out as a vibrant economic hub, known for its bustling
+            seaport, thriving commerce, finance, entertainment, technology, and cultural scene. The city’s dynamic energy and rapid
+            growth make it one of the fastest-growing megacities globally. Lagos’s significance lies in its role as a vital
+            financial center for Nigeria and Africa overall, as well as a cultural and commercial hotspot that shapes the
+            continent’s art, fashion, politics, and tourism landscape.</p>
+        </section>
+
+        <section class="weather">
+            <h2>Culture</h2>
+            <div class="culture-content">
+                <p>Lagos' culture is a dynamic and diverse "Cauldron of Culture," blending indigenous Yoruba traditions with influences
+                from across Nigeria and the world, creating a unique cultural landscape. It's a vibrant hub for music (especially
+                Afrobeats), contemporary art, fashion, and the media industry, including Nollywood. The city's culture is also marked by
+                strong community ties, a passion for festivals, and a rich, evolving history that reflects its growth from a small
+                settlement to a bustling megacity.</p>
+                </div>
+        </section>
+
+    <section id="weather" class="weather" aria-label="Weather information">
+        <h2>Weather <span class="weather-icon-large">⛅</span></h2>
+        <div class="weather-table-wrap">
+            <table aria-label="Current weather details" class="weather-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Condition</td>
+                        <td>Sunny with light breeze</td>
+                    </tr>
+                    <tr>
+                        <td>Current Temperature</td>
+                        <td>22°C</td>
+                    </tr>
+                    <tr>
+                        <td>Wind</td>
+                        <td>12 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td id="windchill-value"><span id="windChill">Calculating...</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+        <section class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/lagos (1).webp" alt="Gallery image 1" />
+                <img src="images/lagos-in-africa (1).webp" alt="Gallery image 2" />
+                <img src="images/lagos-in-nigeria (1).webp" alt="Gallery image 3" />
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> Lagos, Nigeria</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
