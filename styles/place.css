@@ -32,23 +32,13 @@ body {
 .site-header {
     text-align: center;
     padding: 1.5rem 0;
-    background-color: rgb(15, 50, 80);
+    background-color: rgb(6, 67, 58);
 }
 
 .site-title {
     margin: 0;
     font-size: 2rem;
     color: var(--bg);
-}
-
-/* Global CSS variables */
-:root {
-    --primary-color: #004d40;
-    /* dark green - Scottish nature */
-    --secondary-color: #e64a19;
-    /* reddish accent */
-    --background-color: #f6f6f6;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -113,8 +103,8 @@ h2.weather-heading {
 }
 
 h2.weather-heading svg {
-    width: 24px;
-    height: 24px;
+    width: 2px;
+    height: 2px;
     vertical-align: middle;
     fill: none;
     stroke: #000;
@@ -181,7 +171,7 @@ h2.weather-heading svg {
     font-size: .9rem;
     border-top: 1px solid #e5e7eb;
     margin-top: 2rem;
-    background-color: rgb(15, 50, 80);
+    background-color: rgb(4, 57, 50);
 }
 
 .weather>h2 {
