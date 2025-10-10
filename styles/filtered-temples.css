@@ -1,0 +1,123 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    background: #f5f5f5;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: rgb(210, 226, 244);
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(243, 243, 248);
+    padding: 1rem;
+}
+
+.hamburger {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    color: #b9ceeb;
+}
+
+.site-nav {
+    display: none;
+    gap: 1rem;
+}
+
+.site-nav button {
+    background-color: #999de1;
+    border: none;
+    color: white;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.5rem;
+}
+
+.site-nav button:hover,
+.site-nav button:focus {
+    background-color: #7e77cb;
+    outline: none;
+}
+
+.content {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.temple-card {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+    box-shadow: 0 0 10px rgba(15, 45, 87, 0.4);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.temple-info {
+    margin-top: 0.75rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.temple-info strong {
+    display: inline-block;
+    width: 100px;
+}
+
+.site-footer {
+    font-size: 1.75rem;
+    border: 1px solid rgb(40, 41, 43);;
+    border-radius: 8px;
+    background-color: rgb(210, 226, 244);
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    color: #f1f3f5;
+}

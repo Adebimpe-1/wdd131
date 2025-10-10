@@ -1,0 +1,74 @@
+/* Center the content and stack images vertically with a single column layout */
+:root {
+    --page-width: 100%;
+    --image-width: 400px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: #f6f4f4;
+    color: #100f0f;
+}
+
+main {
+    width: min(92%, 800px);
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #f1ecec;
+    padding: 1.5rem;
+    background-color: #000;
+}
+
+.lazy-image {
+    display: block;
+    /* ensure vertical stacking in a single column */
+    margin: 2rem auto;
+    width: var(--image-width);
+    /* 400px wide as required */
+    height: auto;
+    /* maintain aspect ratio; we'll give images explicit height via attributes */
+    max-width: 90vw;
+    /* responsive fallback on small screens */
+    opacity: 0;
+    /* start invisible for fade-in effect */
+    filter: brightness(0);
+    /* start black, will fade to image */
+    transition: opacity 0.8s ease-in-out;
+    /* Optional: a subtle background while loading to mimic "fade from black" */
+    background: #000;
+    object-fit: cover;
+    /* Ensure the animation runs once loaded */
+    will-change: opacity;
+}
+
+/* When an image has loaded (via lazy loading or browser rendering), fade it in */
+.lazy-image.is-visible,
+.lazy-image[data-loaded="true"] {
+    opacity: 1;
+    filter: brightness(1);
+    background: none;
+}
+footer {
+    background-color: black;
+    color: #efebeb;
+    display: flex;
+    justify-content: center;
+}

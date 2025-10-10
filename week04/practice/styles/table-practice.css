@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead th {
+    background-color: #306db3;
+    color: white;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #f2f2f2;
+    /* light zebra color */
+}
+
+tbody td,
+thead th {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}

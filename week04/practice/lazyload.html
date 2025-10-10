@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Adebimpe Aderoju Mary. Lazyloading Examples." />
+    <meta name="author" content="Aderoju Adebimpe M." />
+    <title>WDD 131 – Dynamic Web Fundamentals – ADEROJU ADEBIMPE M.</title>
+
+    <!-- Preconnect to Google's font domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font stylesheet for Roboto (sans-serif family) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css" />
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazyloading images - Scroll to load</h1>
+        <!-- Six images with native lazy loading and 400px width (portrait) -->
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x700.png?text=Image+1" alt="Placeholder portrait image 1" />
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x800.png?text=Image+2" alt="Placeholder portrait image 2" />
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x750.png?text=Image+3" alt="Placeholder portrait image 3" />
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x900.png?text=Image+4" alt="Placeholder portrait image 4" />
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x650.png?text=Image+5" alt="Placeholder portrait image 5" />
+        <img class="lazy-image" loading="lazy" width="400" height="600"
+            src="https://via.placeholder.com/400x700.png?text=Image+6" alt="Placeholder portrait image 6" />
+    </main>
+    <footer>
+        <p>Aderoju Adebimpe Lazyloading example <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

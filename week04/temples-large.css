@@ -1,0 +1,27 @@
+/* Large view adjustments: show horizontal navigation, larger grid, among others */
+@media screen and (min-width: 700px) {
+
+    .site-nav {
+        display: flex;
+        align-items: center;
+    }
+ .hamburger {
+        display: none;
+    }
+
+  
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 1rem;
+    }
+
+    .content {
+        max-width: 1100px;
+    }
+} 
+.site-footer {
+    font-size: 0.7rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #e6f0ff;
+}
