@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #f0f0f0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Thank you for your review!</h2>
+    <p id="counter"></p>
+
+    <script>
+        // Increment review count in localStorage
+        let count = localStorage.getItem('reviewCount');
+        count = count ? parseInt(count) : 0;
+        count++;
+        localStorage.setItem('reviewCount', count);
+
+        document.getElementById('counter').textContent =
+            `Total reviews submitted by you: ${count}`;
+    </script>
+
+    <footer>
+        <p>© 2025 <span id="year"></span> Adebimpe Mary A, from Lagos Nigeria to the world.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
