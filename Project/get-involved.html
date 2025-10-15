@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Jesulana Hope Alive Foundation - Supporting hope and recovery worldwide." />
+    <meta name="author" content="Aderoju Adebimpe M." />
+    <title>Jesulana Hope Alive Foundation</title>
+    <link rel="stylesheet" href="Styles/JHAF.css" />
+    <script src="Scripts/JHAF.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/JHAF-logo.png" alt="Jesulana Hope Alive Foundation logo" loading="lazy" />
+        <h1>Jesulana Hope Alive Foundation</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Support and Volunteer</h2>
+            <p>There are many ways to contribute to our mission:</p>
+            <ul>
+                <li>Donate funds to support our ongoing programs</li>
+                <li>Volunteer your time in community outreach projects</li>
+                <li>Organize local fundraising events</li>
+                <li>Spread awareness through social media</li>
+            </ul>
+            <button id="volunteerBtn">Register to Volunteer</button>
+        </section>
+
+        <section id="volunteerFormSection" hidden>
+            <h3>Volunteer Registration</h3>
+            <form id="volunteerForm" novalidate>
+                <label for="volName">Name:</label><br />
+                <input type="text" id="volName" name="volName" required /><br />
+
+                <label for="volEmail">Email:</label><br />
+                <input type="email" id="volEmail" name="volEmail" required /><br />
+
+                <label for="volInterests">Areas of Interest:</label><br />
+                <select id="volInterests" name="volInterests" required>
+                    <option value="">Select one</option>
+                    <option value="health">Health Outreach</option>
+                    <option value="education">Education Programs</option>
+                    <option value="community">Community Development</option>
+                </select><br />
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+        <div class="container">
+            <p>&copy; 2025 Jesulana Hope Alive Foundation, Ikorodu, Nigeria. All rights reserved.</p>
+        </div>
+        <p id="localDateTime" style="font-size: 1rem; margin-top: 5px;"></p>
+    </footer>
+
+</body>
+
+</html>
