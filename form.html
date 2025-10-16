@@ -9,53 +9,57 @@
     <meta name="author" content="Aderoju Adebimpe M." />
     <title>1000kVa Solar system Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
     <h1>1000kVa Solar system Review Form</h1>
-    <form id="reviewForm" method="get" action="review.html">
+
+    <form id="reviewForm" method="get" action="review.html" novalidate>
+       
         <div class="form-group">
-            <label for="product">1000kVa Solar System  <span class="required">*</span></label>
-            <select id="product" name="product" required>
+            <label for="product" class="required">1000kVa Solar System</label>
+            <select id="product" name="product" required aria-required="true" aria-describedby="productHelp">
                 <option value="" disabled selected hidden>Select a Product ...</option>
+                
+            </select>
+            <div id="productHelp" class="sr-only">Select the product you are reviewing (required)</div>
         </div>
 
+        
         <div class="form-group">
-            <label>Overall Rating <span class="required">*</span></label>
-            <div class="stars">
-                <input type="radio" id="rate1" name="rating" value="1" required><label for="rate1">☆</label>
-                <input type="radio" id="rate2" name="rating" value="2"><label for="rate2">☆</label>
-                <input type="radio" id="rate3" name="rating" value="3"><label for="rate3">☆</label>
-                <input type="radio" id="rate4" name="rating" value="4"><label for="rate4">☆</label>
-                <input type="radio" id="rate5" name="rating" value="5"><label for="rate5">☆</label>
+            <label class="required">Overall Rating</label>
+            <div role="radiogroup" aria-labelledby="ratingLabel" aria-required="true">
+                <div>
+                    <input type="radio" id="rate1" name="rating" value="1" required />
+                    <label for="rate1">1</label>
+                </div>
+                <div>
+                    <input type="radio" id="rate2" name="rating" value="2" />
+                    <label for="rate2">2</label>
+                </div>
+                <div>
+                    <input type="radio" id="rate3" name="rating" value="3" />
+                    <label for="rate3">3</label>
+                </div>
+                <div>
+                    <input type="radio" id="rate4" name="rating" value="4" />
+                    <label for="rate4">4</label>
+                </div>
+                <div>
+                    <input type="radio" id="rate5" name="rating" value="5" />
+                    <label for="rate5">5</label>
+                </div>
             </div>
         </div>
 
+        
         <div class="form-group">
-            <label for="installDate">Date of Installation <span class="required">*</span></label>
-            <input type="date" id="installDate" name="installDate" required>
+            <label for="installDate" class="required">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required aria-required="true" />
         </div>
 
-        <div class="form-group">
-            <label>Useful Features</label>
-            <div>
-                <input type="checkbox" id="feature1" name="features" value="Feature A">
-                <label for="feature1">Duration of Use</label>
-            </div>
-            <div>
-                <input type="checkbox" id="feature2" name="features" value="Feature B">
-                <label for="feature2">Power rating</label>
-            </div>
-            <div>
-                <input type="checkbox" id="feature3" name="features" value="Feature C">
-                <label for="feature3">Charging speed</label>
-            </div>
-            <div>
-                <input type="checkbox" id="feature3" name="features" value="Feature C">
-                <label for="feature3">Intensity rating</label>
-            </div>
-        </div>
+        
 
         <div class="form-group">
             <label for="reviewText">Write your own Review</label>
@@ -64,14 +68,14 @@
 
         <div class="form-group">
             <label for="userName">Your Name</label>
-            <input type="text" id="userName" name="userName">
+            <input type="text" id="userName" name="userName" />
         </div>
 
         <button type="submit">Submit Review</button>
     </form>
 
     <footer>
-        <p>© 2025 <span id="year"></span> Adebimpe Mary A, from Lagos Nigeria to the world.</p>
+        <p>&copy; <span id="yearspan">Adebimpe Mary A, from Lagos Nigeria to the world.</span></p>
         <p id="lastModified"></p>
     </footer>
 </body>

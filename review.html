@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Review Confirmation</title>
     <style>
         body {
@@ -13,27 +13,33 @@
             padding: 20px;
             background: #f0f0f0;
             text-align: center;
+            color: #222;
+        }
+
+        /* Ensure sufficient contrast for text */
+        #counter {
+            font-weight: bold;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 
 <body>
     <h2>Thank you for your review!</h2>
-    <p id="counter"></p>
+    <p id="counter" aria-live="polite" aria-atomic="true"></p>
 
     <script>
-        // Increment review count in localStorage
-        let count = localStorage.getItem('reviewCount');
+        // Increment review count tracked in localStorage
+        let count = localStorage.getItem("reviewCount");
         count = count ? parseInt(count) : 0;
         count++;
-        localStorage.setItem('reviewCount', count);
+        localStorage.setItem("reviewCount", count);
 
-        document.getElementById('counter').textContent =
-            `Total reviews submitted by you: ${count}`;
+        document.getElementById("counter").textContent = `Total reviews submitted by you: ${count}`;
     </script>
 
     <footer>
-        <p>© 2025 <span id="year"></span> Adebimpe Mary A, from Lagos Nigeria to the world.</p>
+        <p>2025 <span id="yearspan">Adebimpe Mary A, from Lagos Nigeria to the world.</span></p>
         <p id="lastModified"></p>
     </footer>
 </body>
