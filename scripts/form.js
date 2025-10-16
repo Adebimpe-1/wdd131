@@ -15,7 +15,7 @@ products.forEach((product) => {
     productSelect.appendChild(option);
 });
 
-// Date and last modified year script (kept from original)
+
 const yearSpan = document.getElementById("yearspan");
 if (yearSpan) {
     const now = new Date();
