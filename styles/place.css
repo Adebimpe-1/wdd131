@@ -4,7 +4,7 @@
     --fg: #0b1020;
     --accent: #2a7ae2;
     --card: #ffffff;
-    --muted: #6b7280;
+    --muted: #4b5563;
     --link: #1e40af;
     --shadow: 0 4px 16px rgba(0, 0, 0, .08);
 }
@@ -44,7 +44,7 @@ body {
 body {
     margin: 2rem;
     font-family: var(--font-family);
-    background-color: var(--background-color);
+    background-color: var(--bg);
     color: var(--primary-color);
 }
 
@@ -94,23 +94,33 @@ nav a:hover {
     box-shadow: var(--shadow);
     margin: 1rem 0 2rem;
 }
-h2.weather-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 700;
-    font-size: 1.5rem;
+/* Mobile view: show SVG icon */
+.weather-icon-mobile {
+    display: block;
 }
 
-h2.weather-heading svg {
-    width: 2px;
-    height: 2px;
-    vertical-align: middle;
-    fill: none;
-    stroke: #000;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+/* Hide emoticon by default */
+.weather-heading .emoticon {
+    display: none;
+}
+
+/* For wider screens at 600px and above */
+@media (min-width: 600px) {
+
+    /* Hide SVG icon on wider view */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Show emoticon on wider view */
+    .weather-heading .emoticon {
+        display: inline;
+    }
+
+    /* Remove or hide any pseudo-element showing weather icon */
+    .weather-heading::after {
+        content: none;
+    }
 }
 
 .weather-table-wrap {
@@ -172,6 +182,7 @@ h2.weather-heading svg {
     border-top: 1px solid #e5e7eb;
     margin-top: 2rem;
     background-color: rgb(4, 57, 50);
+    color: white;
 }
 
 .weather>h2 {
